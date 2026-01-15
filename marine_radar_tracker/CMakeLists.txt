@@ -6,7 +6,7 @@ set(ROS_DEPENDS
     grid_map_ros
     marine_sensor_msgs
     pcl_ros
-    project11_msgs
+    marine_interfaces
     rclcpp
     rosbag2
     sensor_msgs
