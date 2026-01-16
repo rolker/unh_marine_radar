@@ -6,7 +6,7 @@
 #include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
 #include <tf2_ros/transform_listener.h>
 #include <tf2_ros/buffer.h>
-#include <project11_msgs/msg/detect.hpp>
+#include <marine_interfaces/msg/detect.hpp>
 #include <grid_map_ros/grid_map_ros.hpp>
 #include <tf2/utils.h>
 #include <future>
@@ -177,7 +177,7 @@ private:
   rclcpp::Subscription<marine_sensor_msgs::msg::RadarSector>::SharedPtr radar_subscriber_;
   rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr markers_publisher_;
   rclcpp::Publisher<grid_map_msgs::msg::GridMap>::SharedPtr grid_map_publisher_;
-  rclcpp::Publisher<project11_msgs::msg::Detect>::SharedPtr detects_publisher_;
+  rclcpp::Publisher<marine_interfaces::msg::Detect>::SharedPtr detects_publisher_;
 
   float minimum_range_ = 0.0;
 
